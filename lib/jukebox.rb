@@ -44,15 +44,15 @@ def run
   loop do
   puts "Please enter a command:"
   command = gets.strip
-    if command == "help"
-      help
-    elsif command == "list"
+    if command == "list"
       list(songs)
     elsif command == "play"
       play(songs)
     elsif command == "exit"
       exit_jukebox
       break
+    else 
+      help
     end
   end
 end
