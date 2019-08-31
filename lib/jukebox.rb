@@ -10,9 +10,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-puts "Please enter a command:"
-command = gets.strip
-
 def help
   puts "I accept the following commands:"
   puts "- help : diplays this help message"
@@ -21,13 +18,14 @@ def help
   puts "- exit : exits the program"
 end
 
-def play
-  
+def play(songs)
+  puts "Please enter a song name or number:"
+  user_input = gets.strip
 end
 
-def list(songs_array)
-  songs_array.each_with_index do |item, index|
-    puts "#{index + 1}. #{songs_array[index]}"
+def list(songs)
+  songs.each_with_index do |item, index|
+    puts "#{index + 1}. #{songs[index]}"
   end
 end
 
