@@ -10,10 +10,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def say_hello(name)
-  "Hi #{name}!"
-end
-
 puts "Please enter a command:"
 command = gets.strip
 
@@ -23,3 +19,22 @@ puts "- list : displays a list of songs you can play"
 puts "- play : lets you choose a song to play /n- exit : exits this program"
 puts "Please enter a command:"
 
+def help
+  
+end
+
+def play
+  
+end
+
+def list
+  
+end
+
+def exit_jukebox
+  
+end
+
+def run
+  
+end
