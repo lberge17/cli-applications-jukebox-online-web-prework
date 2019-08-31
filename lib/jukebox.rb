@@ -26,8 +26,9 @@ def play
 end
 
 def list(songs_array)
-  songs_array.each_with_index
-    
+  songs_array.each_with_index do |item, index|
+    puts songs_array[index]
+    index += 1
   end
 end
 
