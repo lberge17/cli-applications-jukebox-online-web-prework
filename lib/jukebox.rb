@@ -47,9 +47,9 @@ def run
   case command
     when "list"
       list(songs)
-    elsif command == "play"
+    when "play"
       play(songs)
-    elsif command == "exit"
+    when "exit"
       exit_jukebox
       break
     else 
