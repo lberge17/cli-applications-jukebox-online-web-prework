@@ -44,7 +44,8 @@ def run
   loop do
   puts "Please enter a command:"
   command = gets.strip
-    if command == "list"
+  case command
+    when "list"
       list(songs)
     elsif command == "play"
       play(songs)
