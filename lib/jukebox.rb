@@ -41,14 +41,16 @@ end
 def run
   puts "Please enter a command:"
   command = gets.strip
-  if command == "help"
-    help
-  elsif command == "list"
-    list(songs)
-  elsif command == "play"
-    play(songs)
-  elsif command == "exit"
-    exit_jukebox
-    break
+  loop do
+    if command == "help"
+      help
+    elsif command == "list"
+      list(songs)
+    elsif command == "play"
+      play(songs)
+    elsif command == "exit"
+      exit_jukebox
+      break
+    end
   end
 end
