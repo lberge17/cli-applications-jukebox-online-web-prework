@@ -43,7 +43,8 @@ end
 def run
   puts "Please enter a command:"
   command = gets.strip
-  while
+  while command
+  puts 
   loop do
     if command == "help"
       help
