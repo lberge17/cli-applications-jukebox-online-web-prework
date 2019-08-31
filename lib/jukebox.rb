@@ -13,26 +13,22 @@ songs = [
 puts "Please enter a command:"
 command = gets.strip
 
-puts "I accept the following commands:"
-puts "- help : diplays this help message"
-puts "- list : displays a list of songs you can play" 
-puts "- play : lets you choose a song to play /n- exit : exits this program"
-puts "Please enter a command:"
-
 def help
   puts "I accept the following commands:"
   puts "- help : diplays this help message"
   puts "- list : displays a list of songs you can play" 
-puts "- play : lets you choose a song to play /n- exit : exits this program"
-
+  puts "- play : lets you choose a song to play /n- exit : exits this program"
+  puts "- exit : exits the program"
 end
 
 def play
   
 end
 
-def list
-  
+def list(songs_array)
+  songs_array.each_with_index
+    
+  end
 end
 
 def exit_jukebox
